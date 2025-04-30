@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOOD&ORGAN-DONAR</title>
+    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="./sidebar.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./nav.css">
+    <link rel="shortcut icon" href="./photos/LOGO.webp" type="image/x-icon">
+<style>
+.mySlides {display:none;}
+</style>
+</head>
+
+<body>
+ <!-- nav bar start -->
+ <nav class="nav-container">
+    <div class="nav-center wrapper">
+        <div class="logo-section">
+            <a href="./home.html">
+                <img src="./photos/LOGO.webp" alt="universitylogo" class="logo">
+            </a>
+        </div>
+        <div class="hamburger">
+            <img src="./photos/button.png" alt="sidebaropen">
+        </div>
+        <div class="nav-links-main">
+            <div class="nav-links">
+                <li><a href="./home.html" class="nav-link active">home</a></li>
+                <li><a href="./Donate.html" class="nav-link">Donate</a></li>
+                <li><a href="./about.html" class="nav-link">About</a></li>
+                <li><a href="./contact.html" class="nav-link">contact</a></li>
+            </div>
+        </div>
+        <div class="nav-social-links-main">
+            <div class="nav-social-links">
+                <li class="nav-social-link">
+                    <a href="https://web.whatsapp.com/">
+                        <img src="./photos/whatapp.png" alt="whataapp">
+                    </a>    
+                </li>
+                <li class="nav-social-link">
+                    <a href="https://www.youtube.com/">
+                        <img src="./photos/youtube.png" alt="youtube">
+                    </a>    
+                </li>
+                <li class="nav-social-link">
+                    <a href="https://www.facebook.com/home.php">
+                        <img src="./photos/facebook.png" alt="facebook">
+                    </a>    
+                </li>
+                <li class="nav-social-link">
+                    <a href="https://www.instagram.com/accounts/login/?hl=en">
+                        <img src="./photos/insta .png" alt="instagram">
+                    </a>    
+                </li>
+            </div>
+        </div>
+    </div>
+ </nav>
+<!-- nav bar ends -->
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="./photos/ca-1.jpg" style="width:100%">
+  <img class="mySlides" src="./photos/ca-1.jpg" style="width:100%">
+  <img class="mySlides" src="./photos/ca-1.jpg" style="width:100%">
+  <img class="mySlides" src="./photos/ca-1.jpg" style="width:100%">
+  <img class="mySlides" src="./photos/ca-1.jpg" style="width:100%">
+  <img class="mySlides" src="./photos/ca-1.jpg" style="width:100%">
+  <img class="mySlides" src="./photos/ca-2.jpg" style="width:100%">
+  <img class="mySlides" src="./photos/camp-1.webp" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>
